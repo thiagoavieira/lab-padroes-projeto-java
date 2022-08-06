@@ -1,5 +1,6 @@
 package gof.one.digitalinnovation;
 
+import gof.one.digitalinnovation.facade.Facade;
 import gof.one.digitalinnovation.singleton.SingletonEager;
 import gof.one.digitalinnovation.singleton.SingletonLazy;
 import gof.one.digitalinnovation.singleton.SingletonLazyHolder;
@@ -44,5 +45,9 @@ public class Test {
         robo.mover();
         robo.mover();
         robo.mover();
+
+        // Testes relacionados ao Padrão Estrutural "Facade":
+        Facade facade = new Facade();
+        facade.migrarCliente("Thiago", "14801-192");
     }
 }
