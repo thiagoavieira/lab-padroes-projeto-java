@@ -1,4 +1,4 @@
-package gof.one.digitalinnovation;
+package gof.one.digitalinnovation.singleton;
 
 /**
  * Singleton "Detentor Preguiçoso"; encapsula a instância em uma classe estática externa.
