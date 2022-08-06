@@ -1,4 +1,4 @@
-package gof.one.digitalinnovation;
+package gof.one.digitalinnovation.singleton;
 
 /**
  * Singleton "apressado"; instância já atribuída.

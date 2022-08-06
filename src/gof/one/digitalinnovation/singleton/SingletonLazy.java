@@ -1,4 +1,4 @@
-package gof.one.digitalinnovation;
+package gof.one.digitalinnovation.singleton;
 
 /**
  * Singleton "preguiçoso"; não disponibiliza a instância para o usuário.
