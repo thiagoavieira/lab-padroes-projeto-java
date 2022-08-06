@@ -1,5 +1,10 @@
 package gof.one.digitalinnovation;
 
+import gof.one.digitalinnovation.singleton.SingletonEager;
+import gof.one.digitalinnovation.singleton.SingletonLazy;
+import gof.one.digitalinnovation.singleton.SingletonLazyHolder;
+import gof.one.digitalinnovation.strategy.*;
+
 public class Test {
     public static void main(String[] args) {
 
@@ -21,5 +26,23 @@ public class Test {
         System.out.println("\n" + singletonLazyHolder);
         singletonLazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(singletonLazyHolder);
+
+        // Testes relacionados ao Padrão Comportamental "Strategy":
+        Comportamento passivo = new ComportamentoPassivo();
+        Comportamento defensivo = new ComportamentoDefensivo();
+        Comportamento agressivo = new ComportamentoAgressivo();
+
+        Robo robo = new Robo();
+        robo.setComportamento(passivo);
+        robo.mover();
+        robo.mover();
+
+        robo.setComportamento(defensivo);
+        robo.mover();
+
+        robo.setComportamento(agressivo);
+        robo.mover();
+        robo.mover();
+        robo.mover();
     }
 }
