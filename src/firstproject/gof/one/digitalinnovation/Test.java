@@ -7,6 +7,7 @@ import gof.one.digitalinnovation.singleton.SingletonLazyHolder;
 import gof.one.digitalinnovation.strategy.*;
 
 public class Test {
+    /*
     public static void main(String[] args) {
 
         /* Testes relacionados ao Design Pattern Singleton:
@@ -50,4 +51,5 @@ public class Test {
         Facade facade = new Facade();
         facade.migrarCliente("Thiago", "14801-192");
     }
+    */
 }
